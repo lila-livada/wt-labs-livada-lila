@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - John Doe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="header-content">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80" alt="Avatar profil fictiv" class="profile-avatar">
+            <div>
+                <h1>John Doe</h1>
+                <p class="subtitle">Applied Computer Science Student (German Selection)</p>
+                <p class="contact-info">
+                    📧 john.doe.student@example.com |
+                    🌐 <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                    🔗 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+                    📍 Brașov, România
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    
+        <section class="card" id="about">
+            <h2>Profile</h2>
+            <p>
+                Second-year Applied Computer Science student at Transilvania University of Brașov, studying in the German Selection track. Passionate about software development, algorithms, and modern web technologies. Eager to apply logical thinking and problem-solving skills in practical academic and professional environments.
+            </p>
+        </section>
+
+        <section class="card" id="education">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Institution</th>
+                        <th>Specialization & Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/2024 - Present</td>
+                        <td>Transilvania University of Brasov</td>
+                        <td>
+                            <strong>Bachelor of Science in Applied Computer Science (German Selection)</strong><br>
+                            <em>Relevant Coursework (Studied in German):</em>
+                            Programming II (C++), Object-Oriented Programming (Java), Operating Systems (Linux/Bash), Data Structures & Algorithms, Numerical Calculus & Graph Theory.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card" id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <h3>Autonomous Drone Targeting Engine (Python)</h3>
+                <p><em>10/2025 - 01/2026 | Lead Developer | Python & Physics Simulation</em></p>
+                <ul>
+                    <li>Developed a ballistic simulation engine using Python to calculate real-time interception points for moving targets.</li>
+                    <li>Implemented physical models for Target, Projectile, and Wind variables using Object-Oriented Programming (OOP) principles.</li>
+                    <li>Engineered logic to account for external factors like wind speed and target velocity to optimize trajectory accuracy.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Ticket to Ride Board Game Remake (C++ & SFML)</h3>
+                <p><em>10/2025 - 01/2026 | Lead Developer | OOP & Game Logic Design</em></p>
+                <ul>
+                    <li>Developed a digital remake of the Ticket to Ride board game using C++ and the SFML library for graphical rendering.</li>
+                    <li>Implemented a custom graph-based architecture to represent cities, routes, and validate path connectivity.</li>
+                    <li>Architected a robust game state machine using Object-Oriented Programming (OOP) to manage player turns.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Medical Management & Booking System (Java & MySQL)</h3>
+                <p><em>02/2025 - 05/2025 | Software Developer</em></p>
+                <ul>
+                    <li>Developed a robust CRUD Application using OOP principles to manage patient diagnostics and doctor schedules.</li>
+                    <li>Designed a relational database schema in MySQL, implementing constraints for data integrity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card" id="gallery">
+            <h2>Image Gallery</h2>
+            <p>Visual previews and mockups from academic projects:</p>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=300&auto=format&fit=crop&q=80" alt="Preview proiect 1">
+                    <p>Drone Simulation</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=300&auto=format&fit=crop&q=80" alt="Preview proiect 2">
+                    <p>Board Game Remake</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=300&auto=format&fit=crop&q=80" alt="Preview proiect 3">
+                    <p>Medical Database UI</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="skills">
+            <h2>Skills & Languages</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>C++, Java (OOP), Python, Bash, HTML/CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technical Tools</h3>
+                    <ul>
+                        <li>Git/GitHub, MySQL, Linux (Fedora/Ubuntu), VS Code</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>German (B2 Level)</li>
+                        <li>English (B2 Level)</li>
+                        <li>Romanian (Native)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="contact">
+            <h2>Contact Form</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 John Doe. Created for Web Technologies Lab.</p>
+    </footer>
+
+</body>
+</html>

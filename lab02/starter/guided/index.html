@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 2 – Anchors and Forms (guided)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="topnav" aria-label="Main">
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+      <a href="#section3">Section 3</a>
+      <a href="#contact">Contact</a>
+      <a href="about.html">About</a>
+      <a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener">HTML Spec</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Anchors and Forms – no JavaScript</h1>
+    <p>Complete the TODOs using only HTML and CSS.</p>
+
+    <section id="section1" class="section">
+      <h2>Section 1</h2>
+      <p>Content for section 1. <a href="#section3">Jump to Section 3</a></p>
+    </section>
+
+    <section id="section2" class="section">
+      <h2>Section 2</h2>
+      <p>More content here. <a href="#section1">Back to Section 1</a></p>
+    </section>
+
+    <section id="section3" class="section">
+      <h2>Section 3</h2>
+      <!-- href="#top" always scrolls to the top of the page -->
+      <p>Last section. <a href="#top">Back to top</a></p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>If you have questions about this lab, reach out via the main survey page.</p>
+    </section>
+
+    <section id="signup" class="section">
+      <h2>Signup form (HTML and CSS only)</h2>
+
+      <form id="demoForm" method="get">
+        <fieldset>
+          <legend>About you</legend>
+          
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required minlength="3" placeholder="e.g. Ana Popescu">
+            <small class="hint">At least 3 characters.</small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="e.g. name@unitbv.ro">
+          </div>
+
+          <div class="field">
+            <label for="year">Year of study</label>
+            <select id="year" name="year">
+              <option value="1">Year 1</option>
+              <option value="2">Year 2</option>
+              <option value="3">Year 3</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <div class="field">
+            <span class="label">Plan (radio)</span>
+            <div class="rowish">
+              <label><input type="radio" name="plan" value="basic" required> Basic</label>
+              <label><input type="radio" name="plan" value="pro"> Pro</label>
+              <label><input type="radio" name="plan" value="enterprise"> Enterprise</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit">Submit</button>
+          <button type="reset" class="secondary">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; WT Lab</p>
+  </footer>
+</body>
+</html>

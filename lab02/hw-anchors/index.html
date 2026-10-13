@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Survey - Home</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="topnav">
+      <a href="#overview">Overview</a>
+      <a href="#survey">Survey</a>
+      <a href="#resources">Resources</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 id="top">Student Survey Micro-site</h1>
+
+    <nav aria-label="Table of contents">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#survey">Take the Survey</a></li>
+        <li><a href="#resources">Helpful Resources</a></li>
+      </ul>
+    </nav>
+
+    <section id="overview" class="section">
+      <h2>Overview</h2>
+      <p>Welcome to our student survey platform. Please share your feedback to help us improve future learning sessions and lab structures.</p>
+    </section>
+
+    <section id="survey" class="section">
+      <h2>Student Survey Form</h2>
+      <form method="get">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required minlength="3" placeholder="e.g. Ana Popescu">
+            <small class="hint">At least 3 characters required.</small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required placeholder="e.g. name@unitbv.ro">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic Details</legend>
+          
+          <div class="field">
+            <label for="year">Year of study</label>
+            <select id="year" name="year" required>
+              <option value="" disabled selected>-- Choose your year --</option>
+              <option value="1">Year 1</option>
+              <option value="2">Year 2</option>
+              <option value="3">Year 3</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <span class="label">Preferred session time</span>
+            <div class="rowish">
+              <label><input type="radio" name="time" value="am" required> Morning</label>
+              <label><input type="radio" name="time" value="pm"> Afternoon</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests & Feedback</legend>
+
+          <div class="field">
+            <span class="label">Topics interested in (choose any)</span>
+            <div class="rowish">
+              <label><input type="checkbox" name="topics" value="html"> HTML & Semantics</label>
+              <label><input type="checkbox" name="topics" value="css"> CSS Layouts</label>
+              <label><input type="checkbox" name="topics" value="forms"> Accessible Forms</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your thoughts here..."></textarea>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit">Submit</button>
+          <button type="reset" class="secondary">Reset</button>
+          <a href="#top" style="align-self: center; margin-left: auto;">Back to top ↑</a>
+        </div>
+
+      </form>
+    </section>
+
+    <section id="resources" class="section">
+      <h2>Resources</h2>
+      <p>Check out these external documentation guides:</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs (opens in a new tab)</a></li>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener">HTML Standard Specification (opens in a new tab)</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; WT Lab - Student Survey</p>
+  </footer>
+
+</body>
+</html>

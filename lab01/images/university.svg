@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Placeholder drawing of a university building">
+  <rect width="320" height="180" fill="#e8f0fa"/>
+  <polygon points="60,70 160,25 260,70" fill="#0a66c2"/>
+  <rect x="70" y="70" width="180" height="80" fill="#ffffff" stroke="#0a66c2" stroke-width="3"/>
+  <rect x="90" y="85" width="18" height="65" fill="#0a66c2"/>
+  <rect x="125" y="85" width="18" height="65" fill="#0a66c2"/>
+  <rect x="177" y="85" width="18" height="65" fill="#0a66c2"/>
+  <rect x="212" y="85" width="18" height="65" fill="#0a66c2"/>
+  <rect x="50" y="150" width="220" height="10" fill="#0a66c2"/>
+</svg>

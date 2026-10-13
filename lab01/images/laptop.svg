@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Placeholder drawing of a laptop showing code">
+  <rect width="320" height="180" fill="#f3f4f6"/>
+  <rect x="80" y="35" width="160" height="100" rx="6" fill="#1f2937"/>
+  <rect x="90" y="45" width="140" height="80" fill="#ffffff"/>
+  <rect x="100" y="57" width="60" height="6" fill="#0a66c2"/>
+  <rect x="110" y="71" width="90" height="6" fill="#f59e0b"/>
+  <rect x="110" y="85" width="70" height="6" fill="#136f2b"/>
+  <rect x="100" y="99" width="40" height="6" fill="#0a66c2"/>
+  <rect x="55" y="135" width="210" height="12" rx="6" fill="#6b7280"/>
+</svg>
