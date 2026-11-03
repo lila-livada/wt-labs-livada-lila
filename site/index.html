@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma Café - Acasă</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Personalizat -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigație -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand hero-title" href="index.html">Aroma Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link nav-link-custom active" href="index.html">Acasă</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="menu.html">Meniu</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secțiunea Hero -->
+  <header class="bg-success text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 hero-title">Cafea proaspătă în fiecare zi</h1>
+      <p class="lead">Descoperă gustul autentic al cafelei de specialitate pregătită cu pasiune.</p>
+      <a href="menu.html" class="btn btn-warning btn-lg pulsing-btn mt-3">Vezi Meniul</a>
+    </div>
+  </header>
+
+  <!-- Conținut Principal - Carduri -->
+  <main class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-lift h-100">
+          <img src="images/photo1.svg" class="card-img-top" alt="Photo 1">
+          <div class="card-body">
+            <h5 class="card-title">Espresso Intens</h5>
+            <p class="card-text">O selecție de boabe prăjite artizanal pentru un boost de energie matinal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-lift h-100">
+          <img src="images/photo2.svg" class="card-img-top" alt="Photo 2">
+          <div class="card-body">
+            <h5 class="card-title">Cappuccino Cremos</h5>
+            <p class="card-text">Spumă fină de lapte combinată perfect cu un shot dublu de espresso.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-lift h-100">
+          <img src="images/photo3.svg" class="card-img-top" alt="Photo 3">
+          <div class="card-body">
+            <h5 class="card-title>Deserturi Casei</h5>
+            <p class="card-text">Prăjituri proaspete făcute în casă, ideale pentru a însoți băutura ta preferată.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">Aroma Café &bull; <a href="#" class="text-white text-decoration-none">Back to top</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
