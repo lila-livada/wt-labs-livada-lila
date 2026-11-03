@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    margin: 30px;
+    background-color: #f4f7f6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #1e3d59;
+    margin-bottom: 5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+caption {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e3d59;
+    padding: 12px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+
+th {
+    background-color: #1e3d59;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+thead th {
+    font-size: 1rem;
+}
+
+
+.code {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-weight: 600;
+}
+
+.sport {
+    background-color: #dcfce7;
+    color: #15803d;
+    font-weight: 600;
+}
+
+.art {
+    background-color: #fef3c7;
+    color: #b45309;
+    font-weight: 600;
+}
+
+.meal {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+    font-style: italic;
+}
+
+.event {
+    background-color: #ffe4e6;
+    color: #be123c;
+    font-weight: bold;
+}
+
+
+tfoot td {
+    background-color: #f8fafc;
+    font-weight: 500;
+    padding: 15px;
+}
+
+tfoot a {
+    color: #1e3d59;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+tfoot a:hover {
+    color: #ff6e40;
+}

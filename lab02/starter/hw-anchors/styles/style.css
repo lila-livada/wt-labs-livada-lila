@@ -1,0 +1,17 @@
+/* Student Survey – styles
+   Required:
+   1. Distinct link states: a:link, a:visited, a:hover, a:active
+   2. Navigation links styled differently from content links (header nav a { … })
+   3. Smooth scrolling + scroll-margin-top on the anchor targets
+   4. Visible focus (:focus-visible) for links and form controls
+   5. Tidy fieldsets, legends and labels
+   Use rem for spacing and font sizes.                                         */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+}
