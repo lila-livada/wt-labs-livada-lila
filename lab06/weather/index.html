@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Message Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- defer: download the script now, run it after the HTML has been parsed -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Weather Message Generator</h1>
+
+    <label for="weather">Select the weather:</label>
+    <select id="weather">
+    <option>Sunny</option>
+    <option>Rainy</option>
+    <option>Snowy</option>
+    <option>Windy</option>
+    <option>Foggy</option>
+</select>
+
+    <button id="messageButton" type="button">Get Message</button>
+
+    <!-- aria-live: screen readers announce the text when it changes -->
+    <p id="msg" aria-live="polite"></p>
+  </main>
+</body>
+</html>

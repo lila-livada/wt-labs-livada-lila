@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.25rem;
+  max-width: 40rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.75rem;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 0.3rem 0.6rem;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+#result {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+}
+
+/* Classes that JavaScript switches on and off with classList */
+.ok {
+  color: #136f2b;
+}
+
+.error {
+  color: #b00020;
+}

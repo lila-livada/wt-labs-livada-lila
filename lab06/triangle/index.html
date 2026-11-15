@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Triangle Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Triangle Checker</h1>
+    <p>Enter three positive numbers. The page tells you whether they can be the sides of a triangle.</p>
+
+    <!-- TODO: three labelled number inputs with the ids a, b, c -->
+    <div>
+        <label for="a">Side a:</label>
+        <input id="a" type="number" step="any">
+    </div>
+    <div>
+        <label for="b">Side b:</label>
+        <input id="b" type="number" step="any">
+    </div>
+    <div>
+        <label for="c">Side c:</label>
+        <input id="c" type="number" step="any">
+    </div>
+
+    <button id="checkButton" type="button">Check</button>
+
+    <!-- The result is written here by JavaScript -->
+    <div id="result" aria-live="polite"></div>
+  </main>
+</body>
+</html>
