@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Trumps Deck</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Top Trumps – Football Players</h1>
+    <p class="muted">Filter, sort and search the deck – or let two random cards battle.</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Deck controls">
+      <label>Search
+        <input id="search" type="search" placeholder="e.g. Jude">
+      </label>
+
+      <label>Category
+        <select id="categoryFilter">
+          <option value="all">All</option>
+        </select>
+      </label>
+
+      <label>Sort by
+        <select id="sortBy">
+          <option value="title">Title (A–Z)</option>
+        </select>
+      </label>
+
+      <button id="battleButton" type="button">⚔ Battle!</button>
+    </section>
+
+    <section id="battle" class="battle" aria-live="polite"></section>
+
+    <p id="summary" class="muted"></p>
+    <section id="deck" class="deck" aria-label="Cards"></section>
+  </main>
+
+  <footer>
+    <p class="muted">Lab 7 – arrays, objects and dynamic rendering</p>
+  </footer>
+</body>
+</html>

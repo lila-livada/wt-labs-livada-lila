@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Memory – Fruit</h1>
+    <p class="muted">Find all pairs with as few moves as possible.</p>
+  </header>
+
+  <main>
+    <section class="bar">
+      <label>Difficulty
+        <select id="difficulty">
+          <option value="6">Easy – 6 pairs</option>
+          <option value="8" selected>Normal – 8 pairs</option>
+          <option value="10">Hard – 10 pairs</option>
+        </select>
+      </label>
+      <p>Moves: <strong id="moves">0</strong></p>
+      <p>Pairs: <strong id="pairs">0 / 8</strong></p>
+      <button id="restartButton" type="button">New game</button>
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section id="board" class="board" aria-label="Cards"></section>
+
+    <section class="found" aria-labelledby="foundTitle">
+      <h2 id="foundTitle">Pairs found</h2>
+      <ul id="foundList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted">Lab 7 – arrays, objects and dynamic rendering</p>
+  </footer>
+</body>
+</html>

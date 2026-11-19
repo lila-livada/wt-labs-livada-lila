@@ -1,0 +1,56 @@
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #e8f5ef;
+  color: #222;
+}
+
+header, main, footer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 { color: #1b6e4a; margin-bottom: 0.25rem; }
+.muted { color: #666; }
+
+.bar { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+.bar p { margin: 0; }
+.bar label { display: flex; gap: 0.4rem; align-items: center; font-weight: 600; }
+select { font: inherit; padding: 0.35rem 0.5rem; border-radius: 6px; }
+
+button { font: inherit; cursor: pointer; border-radius: 8px; }
+#restartButton { margin-left: auto; padding: 0.5rem 1rem; border: none; background: #1b6e4a; color: white; }
+button:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+
+.status { min-height: 1.5rem; font-weight: 700; font-size: 1.2rem; color: #1b6e4a; }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 4), 1fr);
+  gap: 0.6rem;
+}
+
+.card {
+  aspect-ratio: 1;
+  font-size: 2rem;
+  border: none;
+  background: #1b6e4a;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.card:hover:enabled { transform: scale(1.05); }
+.card.flipped { background: white; color: #222; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); }
+.card.matched { background: #c8ecd9; cursor: default; }
+
+.found { margin-top: 1.5rem; }
+.found h2 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+#foundList { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; padding-left: 1.2rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+}
