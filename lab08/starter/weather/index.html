@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Weather Now</h1>
+    <p class="muted">Current weather and a 3-day forecast for any city.</p>
+  </header>
+
+  <main>
+    <!-- novalidate: we show our own messages instead of the browser bubbles -->
+    <form id="searchForm" class="search" novalidate>
+      <label for="city">City</label>
+      <div class="row">
+        <input id="city" name="city" type="text" autocomplete="off"
+               placeholder="e.g. Brașov" required minlength="2" maxlength="60">
+        <button type="submit">Search</button>
+      </div>
+      <p id="cityError" class="error" aria-live="polite"></p>
+    </form>
+
+    <section aria-labelledby="favTitle">
+      <h2 id="favTitle">Favourite cities</h2>
+      <!-- filled from the state (saved in localStorage) -->
+      <ul id="favourites" class="chips"></ul>
+    </section>
+
+    <!-- loading / error / result – rendered from the state -->
+    <section id="result" class="result" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p class="muted">Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo.com</a> (new tab) · Lab 8</p>
+  </footer>
+</body>
+</html>

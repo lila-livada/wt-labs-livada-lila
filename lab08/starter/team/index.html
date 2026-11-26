@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Team Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Pokédex Team Builder</h1>
+    <p class="muted">Search a Pokémon, look at its stats and build a team of up to six.</p>
+  </header>
+
+  <main>
+    <!-- 1. SEARCH – novalidate: our own messages instead of the browser bubbles -->
+    <form id="searchForm" class="panel" novalidate>
+      <label for="query">Name or number</label>
+      <div class="row">
+        <input id="query" name="query" type="text" autocomplete="off"
+               placeholder="e.g. pikachu or 25" required maxlength="30">
+        <button type="submit">Search</button>
+      </div>
+      <p id="queryError" class="error" aria-live="polite"></p>
+    </form>
+
+    <!-- 2. RESULT – loading / not found / error / the Pokémon card, rendered from the state -->
+    <section id="result" class="panel" aria-live="polite"></section>
+
+    <!-- 3. ADD TO TEAM – shown only when a Pokémon was found -->
+    <section id="addSection" class="panel" aria-labelledby="addTitle" hidden>
+      <h2 id="addTitle">Add to your team</h2>
+      <form id="addForm" novalidate>
+        <div class="field">
+          <label for="nickname">Nickname (optional)</label>
+          <input id="nickname" name="nickname" type="text" maxlength="15">
+          <p id="error-nickname" class="error"></p>
+        </div>
+
+        <div class="field">
+          <label for="role">Role in the team</label>
+          <select id="role" name="role" required>
+            <option value="">– choose a role –</option>
+            <option value="Attacker">Attacker</option>
+            <option value="Defender">Defender</option>
+            <option value="Support">Support</option>
+            <option value="Speedster">Speedster</option>
+          </select>
+          <p id="error-role" class="error"></p>
+        </div>
+
+        <button type="submit">Add to team</button>
+        <!-- team rules (full team, duplicate) and the confirmation appear here -->
+        <p id="addStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- 4. THE TEAM – saved in localStorage -->
+    <section class="panel" aria-labelledby="teamTitle">
+      <h2 id="teamTitle">My team</h2>
+      <p id="teamSummary" class="muted"></p>
+      <ul id="team" class="team"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted">Data from <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokéAPI</a> (new tab) · Lab 8</p>
+  </footer>
+</body>
+</html>

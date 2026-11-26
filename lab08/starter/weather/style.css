@@ -1,0 +1,55 @@
+/* Weather Now – styles (plain CSS, no framework) */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg, #dbeafe, #f0f9ff);
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 1rem; }
+h1 { color: #1d4ed8; margin-bottom: 0.25rem; }
+.muted { color: #64748b; }
+
+.search, .result, section {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(30, 64, 175, 0.08);
+}
+
+label { font-weight: 600; display: block; margin-bottom: 0.25rem; }
+.row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+input, button { font: inherit; padding: 0.55rem 0.8rem; border-radius: 8px; border: 1px solid #94a3b8; }
+input { flex: 1 1 220px; }
+input[aria-invalid="true"] { border-color: #b91c1c; outline-color: #b91c1c; }
+button { cursor: pointer; background: #1d4ed8; color: white; border: none; }
+button:disabled { opacity: 0.6; cursor: default; }
+button:focus-visible, input:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+
+.error { color: #b91c1c; min-height: 1.2rem; margin: 0.4rem 0 0; }
+.box { padding: 0.75rem; border-radius: 8px; }
+.error.box { background: #fee2e2; }
+.warning { color: #92400e; }
+.warning.box { background: #fef3c7; }
+.loading { font-style: italic; }
+
+.chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip { display: flex; border-radius: 999px; overflow: hidden; border: 1px solid #93c5fd; }
+.chip button { border-radius: 0; background: #eff6ff; color: #1d4ed8; padding: 0.3rem 0.7rem; }
+.chip .chip-remove { border-left: 1px solid #93c5fd; }
+
+.now { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.big-emoji { font-size: 2.2rem; }
+.temp { font-size: 2.4rem; font-weight: 700; }
+.save { margin-top: 0.75rem; background: #f59e0b; color: #1e293b; }
+
+.forecast { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.day {
+  flex: 1 1 180px;
+  display: flex; flex-direction: column; align-items: center; gap: 0.2rem;
+  background: #f1f5f9; border-radius: 10px; padding: 0.75rem;
+}
